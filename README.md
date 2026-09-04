@@ -85,11 +85,11 @@ git clone https://github.com/Priyansh2811/TaskLedger.git
 ```
 
 ### 1. Backend (Port 8080):
-In first terminal:
+In first terminal:(Install Maven)
 
 ```bash
 cd backend
-./mvnw spring-boot:run
+mvn spring-boot:run
 ```
 
 ### 2. Frontend (port 5173):
