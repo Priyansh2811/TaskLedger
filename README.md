@@ -1,9 +1,9 @@
-# Task Ledger-Managing Daily Activity
+# Task Ledger-Managing Daily Activity Website
 
 A to-do application styled as a physical accounting ledge Backend is Java (Spring Boot),
 frontend is React (Vite), talking over a plain REST API.
 
-## What makes this different from a normal to-do app
+## ✨ Features 
 
 - **Focus Stamp** — pick any outstanding entry and run a 25-minute focus
   block against it right in the sidebar Each task also carries an editable estimate
@@ -19,13 +19,13 @@ frontend is React (Vite), talking over a plain REST API.
 
 
 
-## Stack
+## 🛠️ Tech Stack
 
 - **Backend:** Java 17, Spring Boot 3, Spring Data JPA. Swap the two datasource lines in
   `application.properties` for Postgres/MySQL in production.
 - **Frontend:** React 18 + Vite, styled with CSS.
 
-## Project structure
+## 📁 Project Structure
 ```
 Task_Ledger/
 ├── backend/
@@ -76,33 +76,34 @@ Task_Ledger/
 
 
 
-## Getting Started
+## 🚀 Getting Started
 
-### Clone the repository:
+### **Clone the repository:**
 
 ```bash
-git clone https://github.com/Priyansh2811/MyPortfolio.git
+git clone https://github.com/Priyansh2811/TaskLedger.git
 ```
 
-### 1. Backend (port 8080)
+### 1. Backend (Port 8080):
+In first terminal:
 
 ```bash
 cd backend
 ./mvnw spring-boot:run
 ```
 
-On Windows use `mvn spring-boot:run` (First install Maven) . The API is now live at
-`http://localhost:8080/api/tasks`.
+### 2. Frontend (port 5173):
 
-### 2. Frontend (port 5173)
-
-In a second terminal:
+In second terminal:
 
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
+### 3. Open in browser:
+```bash
+http://localhost:5173
+``` 
 
-Open `http://localhost:5173`. 
 
