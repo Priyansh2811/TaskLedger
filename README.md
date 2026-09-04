@@ -26,24 +26,41 @@ frontend is React (Vite), talking over a plain REST API.
 - **Frontend:** React 18 + Vite, styled with CSS.
 
 ## Project structure
-
 ```
-backend/
-  src/main/java/com/ledger/todo/
-    model/        Task entity, request/response DTOs
-    repository/   Spring Data JPA repository
-    service/      Business logic: recurrence engine, stats, reordering
-    controller/   REST endpoints under /api/tasks
-    config/       CORS config + first-run demo data seeder
-frontend/
-  src/
-    api/          fetch-based client for the backend
-    hooks/        useTasks – data fetching + optimistic UI updates
-    components/   Masthead, Composer, FilterRail, LedgerList, TaskRow, FocusStamp
-    styles/       design tokens (index.css) + layout/components (app.css)
+Task_Ledger/
+├── backend/
+│   ├── .mvn/wrapper/                  # Maven wrapper binaries and properties
+│   ├── src/main/java/com/ledger/todo/
+│   │   ├── config/                    # CORS configuration and first-run demo data seeder
+│   │   ├── controller/                # REST endpoints under /api/tasks
+│   │   ├── model/                     # Task entity, request/response DTOs
+│   │   ├── repository/                # Spring Data JPA repositories
+│   │   ├── service/                   # Business logic: recurrence engine, stats, reordering
+│   │   └── TodoLedgerApplication.java # Spring Boot application entry point
+│   ├── src/main/resources/
+│   │   └── application.properties     # Database & server configurations
+│   ├── .gitignore                     # Backend Git ignore rules
+│   ├── mvnw                           # Maven wrapper execution script
+│   └── pom.xml                        # Maven dependencies and build setup
+│
+├── frontend/
+│   ├── public/                        # Static assets and favicon
+│   ├── src/
+│   │   ├── api/                       # Fetch-based API client for backend communication
+│   │   ├── components/                # UI components: Masthead, Composer, FilterRail, TaskRow, FocusStamp
+│   │   ├── hooks/                     # Custom hooks: useTasks (optimistic UI & data fetching)
+│   │   ├── styles/                    # Design tokens (index.css) & component layouts (app.css)
+│   │   ├── App.jsx                    # Root view orchestrator
+│   │   └── main.jsx                   # React application mount point
+│   ├── .gitignore                     # Frontend Git ignore rules
+│   ├── index.html                     # Frontend HTML template
+│   ├── package.json                   # UI dependencies and build scripts
+│   ├── package-lock.json              # Locked npm dependency tree
+│   └── vite.config.js                 # Vite bundler and dev server configuration
+│
+└── README.md                          # Full-stack documentation and setup guide
 ```
-
-## Running it
+## Install dependencies
 
 ### 1. Backend (port 8080)
 
