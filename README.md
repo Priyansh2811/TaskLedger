@@ -60,7 +60,29 @@ Task_Ledger/
 │
 └── README.md                          # Full-stack documentation and setup guide
 ```
-## Install dependencies
+
+## API reference
+
+| Method | Path                     | Purpose                               |
+|--------|--------------------------|---------------------------------------|
+| GET    | `/api/tasks`             | List all active (non-archived) tasks  |
+| GET    | `/api/tasks/stats`       | Computed summary counts               |
+| POST   | `/api/tasks`             | Create a task                         |
+| PUT    | `/api/tasks/{id}`        | Update a task                         |
+| PATCH  | `/api/tasks/{id}/toggle` | Toggle complete (spawns recurrence)   |
+| PATCH  | `/api/tasks/{id}/archive`| Archive (soft-hide) a task            |
+| DELETE | `/api/tasks/{id}`        | Permanently delete a task             |
+| POST   | `/api/tasks/reorder`     | Persist a new manual ordering         |
+
+
+
+## Getting Started
+
+### Clone the repository:
+
+```bash
+git clone https://github.com/Priyansh2811/MyPortfolio.git
+```
 
 ### 1. Backend (port 8080)
 
@@ -82,20 +104,5 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:5173`. The Vite dev server proxies `/api` calls to
-the backend on port 8080, so both must be running.
-
-## API reference
-
-| Method | Path                     | Purpose                               |
-|--------|--------------------------|---------------------------------------|
-| GET    | `/api/tasks`             | List all active (non-archived) tasks  |
-| GET    | `/api/tasks/stats`       | Computed summary counts               |
-| POST   | `/api/tasks`             | Create a task                         |
-| PUT    | `/api/tasks/{id}`        | Update a task                         |
-| PATCH  | `/api/tasks/{id}/toggle` | Toggle complete (spawns recurrence)   |
-| PATCH  | `/api/tasks/{id}/archive`| Archive (soft-hide) a task            |
-| DELETE | `/api/tasks/{id}`        | Permanently delete a task             |
-| POST   | `/api/tasks/reorder`     | Persist a new manual ordering         |
-
+Open `http://localhost:5173`. 
 
