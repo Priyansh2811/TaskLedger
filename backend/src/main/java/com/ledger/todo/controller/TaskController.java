@@ -12,8 +12,7 @@ import java.util.List;
 import java.util.Map;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-@CrossOrigin(origins = {"https://taskledger-ashen.vercel.app", "http://localhost:5173"})
-
+@CrossOrigin(originPatterns = {"https://*.vercel.app", "http://localhost:*"}, allowedHeaders = "*")
     // your existing controller code remains unchanged
 @RestController
 @RequestMapping("/api/tasks")
