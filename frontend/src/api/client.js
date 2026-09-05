@@ -1,4 +1,6 @@
-const BASE = '/api/tasks';
+const BASE = import.meta.env.VITE_API_BASE_URL 
+  ? `${import.meta.env.VITE_API_BASE_URL.replace(/\/$/, '')}/api/tasks`
+  : '/api/tasks';
 
 async function handle(res) {
   if (!res.ok) {
