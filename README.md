@@ -1,7 +1,7 @@
 # Task Ledger-Managing Daily Activity Website
 
 A to-do application styled as a physical accounting ledge Backend is Java (Spring Boot),
-frontend is React (Vite), talking over a plain REST API.
+frontend is React (Vite), talking over REST API.
 
 ## ✨ Features 
 
