@@ -106,4 +106,7 @@ npm run dev
 http://localhost:5173
 ``` 
 
-## You can access the website https://taskledger-ashen.vercel.app
+## 🚀 Deployment
+Deployed on Vercel (https://priyanshuspace.vercel.app/)
+
+
