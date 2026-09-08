@@ -6,7 +6,7 @@ frontend is React (Vite), talking over REST API.
 ## ✨ Features 
 
 - **Focus Stamp** — pick any outstanding entry and run a 25-minute focus
-  block against it right in the sidebar Each task also carries an editable estimate
+  block against it right in the sidebar. Each task also carries an editable estimate
   of how many focus units it will take, shown as tick marks on its row.
 - **Recurring entries that regenerate themselves** — mark a daily,
   weekday-only, or weekly task done and the backend automatically opens
