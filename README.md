@@ -107,6 +107,6 @@ http://localhost:5173
 ``` 
 
 ## 🚀 Deployment
-Deployed on Vercel (https://priyanshuspace.vercel.app/)
+Deployed on Vercel (https://taskledger-dev.vercel.app/)
 
 
