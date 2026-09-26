@@ -6,11 +6,9 @@ frontend is React (Vite), talking over REST API.
 ## ✨ Features 
 
 - **Focus Stamp** — pick any outstanding entry and run a 25-minute focus
-  block against it right in the sidebar. Each task also carries an editable estimate
-  of how many focus units it will take, shown as tick marks on its row.
+  block against it right in the sidebar.
 - **Recurring entries that regenerate themselves** — mark a daily,
-  weekday-only, or weekly task done and the backend automatically opens
-  the next occurrence with the correct next due date.
+  weekday-only, or weekly task done and the backend automatically.
 - **Manual ledger ordering** — drag entries to reorder; the order is
   persisted server-side (`POST /api/tasks/reorder`) and is its own sort
   mode, distinct from sorting by due date or priority.
